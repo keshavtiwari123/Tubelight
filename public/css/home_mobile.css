@@ -1,0 +1,563 @@
+mark{
+                background-color: #3bbced;
+                color: white;
+                opacity: .9;
+            }
+            @keyframes slide-out{
+                from{transform: translateX(0)}
+                to{transform: translateX(-100%)}
+            }
+
+            @keyframes slide-in{
+                from{transform: translateX(-100%)}
+                to{transform: translateX(0%)}
+            }
+            @keyframes slide-up{
+                from{transform: translateY(0)}
+                to{transform: translateY(-100%)}
+            }
+
+            @keyframes slide-down{
+                from{transform: translateY(-100%)}
+                to{transform: translateY(0%)}
+            }
+            
+            @keyframes line1{
+                from{transform: translate(150px, 20px) rotateZ(-45deg)}
+                to{transform: translate(0px, 20px) rotateZ(-90deg); background-color: #3bbced}
+            }
+            @keyframes line2{
+                from{transform: translate(150px, -10px) rotateZ(-45deg)}
+                to{transform: translate(0px, -20px) rotateZ(-90deg); background-color: #3bbced}
+            }@keyframes line3{
+                from{transform: translate(150px, -40px) }
+                to{transform: translate(0px, -60) rotateZ(-90deg); background-color: #3bbced}
+            }
+
+            @keyframes lineback1{
+                from{transform: translate(0px, 20px) rotateZ(-90deg)}
+                to{transform: translate(150px, 20px) rotateZ(45deg); background-color: salmon}
+            }
+            @keyframes lineback2{
+                from{transform: translate(0px, -20px) rotateZ(-90deg)}
+                to{transform: translate(150px, -10px) rotateZ(-45deg); background-color: salmon}
+            }@keyframes lineback3{
+                from{transform: translate(0px, -60px) rotateZ(-90deg)}
+                to{transform: translate(150px, -40px) rotateZ(-45deg); background-color: salmon}
+            }
+        @keyframes changecolor{
+            0%{color: white}
+            10%{color: blue}
+            20%{color: red}
+            30%{color: yellow}
+            40%{color: pink}
+            50%{color: orange}
+            60%{color: purple}
+            70%{color: brown}
+            80%{color: silver}
+            90%{color: gold}
+            100%{color: salmon}
+        }
+        @keyframes arrow_down
+		{
+			from{-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 60%, 100% 60%, 50% 100%, 0% 60%, 40% 60%); background-color: #3bbced;}
+			to{-webkit-clip-path: polygon(50% 0%, 100% 40%, 60% 40%, 60% 100%, 40% 100%, 40% 40%, 0% 40%); transform: translateY(70px); background-color: salmon;}
+		}
+		@keyframes arrow_up
+		{
+			from{-webkit-clip-path: polygon(50% 0%, 100% 40%, 60% 40%, 60% 100%, 40% 100%, 40% 40%, 0% 40%); transform: translateY(70px); background-color: salmon;}
+			to{-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 60%, 100% 60%, 50% 100%, 0% 60%, 40% 60%); transform: translateY(0px); background-color: #3bbced}
+		}
+
+		@keyframes navbar-show{
+            form{transform: scaleY(0)}
+            to{transform: scaleY(1)}
+        }
+        @keyframes navbar-hide{
+            form{transform: scaleY(1)}
+            to{transform: scaleY(0)}
+        }
+li{
+            font-family: 'indie flower', cursive;
+        }
+        li:nth-child(even){
+            animation: changecolor 2s infinite;
+        }
+
+        li:nth-child(odd){
+            animation: changecolor 1s infinite;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+.big{
+     font-size: 35px;
+    }
+body{
+
+}
+
+#header
+{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 0px 10px grey;
+    transition: transform .5s;
+}
+
+#logo
+{
+	font-size: 40px;
+	position: absolute;
+	left: 5%;
+	color: salmon;
+	opacity: .7;
+	font-family: 'Indie Flower', cursive;
+}
+#wdd-head
+{
+	font-size: 10px;
+	position: absolute;
+	top: 45px;
+	left: 18%;
+	color: #3bbced;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+#sidebar{
+    background-color: black;
+    box-shadow: 3px 2px 3px black;
+    text-align: center;
+    transform: translateX(-100%);
+    z-index: 3;
+    opacity: .9;
+    color: #3bbced;
+    border-radius-left-top: 10px;
+    z-index: 4;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 60%;
+    height: 100%;
+}
+#home-side{
+                position: absolute;
+                top: 15%;
+                left: 15%;
+                font-size: 20px;
+            }
+            #about{
+                position: absolute;
+                top: 19%;
+                left: 15%;
+                font-size: 20px;
+            }
+            #portfolio{
+                position: absolute;
+                top: 23%;
+                left: 15%;
+                font-size: 20px;
+
+            }
+            #services{
+                position: absolute;
+                font-size: 20px;
+                top: 27%;
+                left: 15%;
+            }
+            #marketing-side{
+                position: absolute;
+                top: 31%;
+                font-size: 20px;
+                left: 15%;
+            }
+            #blog-side{
+                position: absolute;
+                top: 35%;
+                font-size: 20px;
+                left: 15%;
+            }
+            #faqs-side{
+                position: absolute;
+                top: 39%;
+                font-size: 20px;
+                left: 15%;
+            }
+            #price-side{
+                position: absolute;
+                top: 43%;
+                font-size: 20px;
+                left: 15%;
+            }
+            #logo-side{
+                position: absolute;
+                top: 73%;
+                margin-left: -30px;
+                font-family: 'indie flower', cursive;
+                font-size: 35px;
+               
+            }
+            #contact{
+                position: absolute;
+                top: 53%;
+                left: 5%;
+                font-size: 25px;
+            }
+            #wdd-side{
+                position: absolute;
+                top: 81%;
+                margin-left: 20px;
+                font-size: 9px;
+                width: 250px;
+                font-family: 'indie flower', cursive;
+                margin-left: -30px;
+                animation: changecolor 5s infinite;
+            }
+
+            .fb-side{
+                position: absolute;
+                top: 60%;
+                left: 1%;
+                padding-left: 15px;
+                padding-top: 5px;
+                height: 35px;
+                border-radius:2px;
+                overflow: hidden;
+                color: blue;
+                background-color: white;
+                width: 40px;
+            }
+            .goo-side{
+                position: absolute;
+                top: 60%;
+                left: 25%;
+                background-color: rgb(219, 65, 65);
+                color: white;
+                width: 40px;
+                height: 35px;
+                border-radius: 2px;
+            }.twi-side{
+                position: absolute;
+                top: 60%;
+                left: 50%;
+            }.ins-side{
+                position: absolute;
+                top: 60%;
+                left: 75%;
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+#nav-drop-mobile
+{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(255, 255, 255, .95);
+	z-index: 4;
+	color: black;
+	transform: translateY(-100%);
+}
+#nav-drop-mobile a{color: black;}
+#nav-mobile-logo
+{
+    font-size: 40px;
+    position: absolute;
+    left: 5%;
+    opacity: .7;
+    font-family: 'Indie Flower', cursive;
+}
+#nav-mobile-wdd
+{
+    font-size: 10px;
+    position: absolute;
+    top: 45px;
+    left: 18%;
+    animation: changecolor 5s infinite;
+
+}
+#nav-services
+{
+	width: 20%;
+	position: absolute;
+	left: 0%;
+	top: 70px;	
+}
+.services
+{
+	transform-origin: 0% -0%;
+    transform: scaleY(0);
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    background-color: #3bcdef;
+    font-size: 18px;
+}
+.services div{
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#nav-marketing
+{
+	width: 20%;
+	position: absolute;
+	left: 22%;
+	top: 70px;
+}
+.marketing
+{
+	transform-origin: 0% -0%;
+    transform: scaleY(0);
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    background-color: #3bbced;
+    font-size: 18px;
+    width: 100%;
+}
+.marketing div{
+    height: 33%;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+}
+#our-work
+{
+	width: 24%;
+	position: absolute;
+	left: 47%;
+	top: 70px;
+}
+#prices
+{
+	width: 15%;
+	position: absolute;
+	left: 71%;
+	top: 70px;
+}
+#blog
+{
+	width: 10%;
+	position: absolute;
+	left: 89%;
+	top: 70px;
+}
+
+#three-lines{
+    cursor: pointer;
+   	position: fixed;
+    z-index: 5;
+    position: fixed;
+    left: 20px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+
+}
+#three-lines:hover{cursor: pointer}
+#line-1{
+    width: 8px;
+    height: 30px;
+    transform: translate(0px, 20px) rotateZ(-90deg);
+    background-color: #3bbced;
+}
+#line-2{
+    width: 8px;
+    height: 30px;
+    transform: translate(0px, -20px) rotateZ(-90deg);
+    background-color: #3bbced;
+}
+#line-3{
+    width: 8px;
+    height: 30px;
+    transform: translate(0px, -60px) rotateZ(-90deg);
+    background-color: #3bbced;
+}
+
+#drop-lines-mobile
+{
+	width: 25px;
+	height: 25px;
+	z-index: 5;
+	-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 80%, 80% 60%, 100% 60%, 50% 100%, 0% 60%, 20% 60%, 40% 80%);
+	background-color: #3bbced;
+	position: fixed;
+	top: 20px;
+	left: 93%;
+}
+
+
+
+#footer{
+    position: absolute;
+    background-color: #505050;
+    width: 100%;
+    height: 70%;
+    margin-top: 70%;       
+}
+#logo-foot
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+}
+#wdd{
+    font-family: 'Indie Flower', cursive;
+    font-size: 10px;
+    position: absolute;
+    top: 44px;
+    left: 45px;
+    animation: changecolor 5s infinite;
+}
+#info-foot
+{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+    left: 5px;
+}
+#contact-foot
+{
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    color: white;
+    font-size: 20px
+}
+.fb-foot
+{
+    position: absolute;
+    top: 51%;
+    width: 40px;
+    left: 0%;
+    padding-left: 15px;
+    padding-top: 5px;
+    height: 35px;
+    border-radius:2px;
+    overflow: hidden;
+    color: blue;
+    background-color: white;
+}.goo-foot
+{
+    position: absolute;
+    top: 51%;
+    width: 25%;
+    background-color: rgb(219, 65, 65);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    left: 25%;
+}.ins-foot
+{
+    position: absolute;
+    top: 51%;
+    width: 25%;
+    left: 50%;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}.twi-foot
+{
+    position: absolute;
+    top: 51%;
+    width: 25%;  
+    left: 75%; 
+    color: skyblue;
+}
+
+#address{
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    font-size: 20px;
+    color: white;
+}
+#address-main{
+    position: absolute;
+    top: 70%;
+    left: 6%;
+    color: white;
+}
+#policies{
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    font-size: 20px;
+    color: white;
+}
+#terms{
+    position: absolute;
+    top: 90%;
+    left: 6%;
+    color: white;
+}
+#privacy{
+    position: absolute;
+    top: 94%;
+    left: 6%;
+    color: white;
+}
+
+#copyright{
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                height: 20px;
+                opacity: 1;
+                font-size: 12px;
+                background-color: #707070;
+                text-align: center;
+                color: white;
+            }
+
+
+#message{
+                position: fixed;
+                top: 85%;
+                left: 93%;
+                width: 6%;
+                height: 8%;
+                background-color: salmon;
+                border-radius: 20px;
+                text-align: center;
+                transform: scale(.8);
+                z-index: 3;
+                transition: transform 10s;
+                opacity: .8;
+            }
+            
+            #enquiry{
+                position: fixed;
+                top: 85%;
+                left: 87%;
+                width: 6%;
+                height: 8%;
+                background-color: salmon;
+                border-radius: 20px;
+                text-align: center;
+                transform: scale(.8);
+                z-index: 3;
+                transition: transform 10s;
+                opacity: .8;
+            }

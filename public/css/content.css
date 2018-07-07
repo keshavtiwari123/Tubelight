@@ -1,0 +1,630 @@
+@keyframes move_up{
+		from{transform: translateY(0%)}
+		to{transform: translateY(-60%)}
+	}
+	@keyframes move_down{
+		from{transform: translateY(-60%)}
+		to{transform: translateY(0%)}
+	}
+	
+	@keyframes text_move_up{
+		from{transform: translateY(0px);  color: #3bbced;}
+		to{transform: translate(-100px, -100px) scale(1.6); color: salmon; font-weight: 5px;}
+	}
+
+	@keyframes lefti
+	{
+		from{transform: translateX(100%); opacity: 0}
+		to{transform: translateX(0%); opacity: 1}
+	}
+
+
+	#behind-image-1{
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+	#behind-image-1-div{
+		position: absolute;
+		top: 1%;
+		height: 95%;
+		width: 100%;
+	}
+	#behind-image-1-info{
+		position: absolute;
+		margin-top: 19%;
+		color: white;
+		z-index: 2;	
+	}
+	#behind-image-1-info-2{
+		position: absolute;
+		margin-top: 50%;
+		color: white;
+		z-index: 2;
+	}
+
+	#uncle-ben{
+		position: absolute;
+		margin-top: 25%;
+		color: white;
+		z-index: 2;
+	}
+
+	#info-1{
+		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+	#logo-icon-home{
+        position: absolute;
+	}
+	#wdd-icon-home{
+		position: absolute;
+		
+	}
+	#info-container-inside
+	{
+		height: 400px;
+		margin-top: 120%;
+		background-color: rgba(255, 0, 0, .2);
+		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+	}
+	#info-container{
+		position: absolute;
+		color: rgb(255, 0, 0, .3);
+	}
+	#info-container-more{
+		position: absolute;
+		color: white;
+		text-align: center;
+		
+	}
+
+	#info-2{
+		position: absolute;
+		color: black;
+		background-color: white;
+		width: 100%;
+	}
+	#info-2_1{
+		background-color: rgba(0, 0, 0, .2);
+		overflow: hidden;
+		height: 500px;
+		margin-top: -100px;
+		clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
+	}
+	#info-2_2{
+		background-color: rgba(255, 0, 0, .2);
+		overflow: hidden;
+		height: 400px;
+		margin-top: -100px;
+		clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+	}
+	#br{
+		width: 100%;
+		height: 5px;
+		margin-top: 30px;
+	}
+	#br1{
+		width: 50%;
+		margin-left: 0px;
+		background-color: salmon;
+		height: 100%;
+	}
+	#br2{
+		width: 50%;
+		margin-left: 50%;
+		margin-top: -5px;
+		height: 100%;
+		background-color: #3bbced;
+	}
+
+	#info-2_2{
+		width: 100%;
+	}
+#ball{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	left: calc(100% - 50px);
+}
+	#info-3{
+		margin-top: 70%;
+	}
+	#info-3-info{
+		height: 15%;
+		margin-top: -5%;
+		color: salmon;
+		margin-left: 10%;
+		font-size: 30px;
+
+	}
+	.type{
+		position: relative;
+		text-align: center;
+		border: 1px solid #3bbced;
+		width: 32%;
+		height: 400px;
+		font-size: 20px;
+		color: salmon;
+		font-size: 40px;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+	.type img{
+		width: 100%;
+	}
+	.type:hover img{
+		animation: zoom 1s forwards;
+		cursor: pointer;
+	}
+
+	.type span{
+		position: absolute;
+		margin-left: -10%;
+		
+	}
+	.type:hover span{
+		animation: text_move_up 2s forwards;
+	}
+	
+	#info-4{
+		position: absolute;
+		width: 100%;
+		height: 500px;
+		background-color: rgba(0, 0, 0, .1);
+	}
+
+	#form-1{
+		background-color: #505050;
+
+	}
+	#name{
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		font-size: 20px;
+		border-radius: 5px;
+		color: salmon;
+		font-family: 'Indie Flower', cursive;
+	}
+	#msg:focus{
+		border: 2px solid #3bbced;
+	}#name:focus{
+		border: 2px solid #3bbced;
+	}#email:focus{
+		border: 2px solid #3bbced;
+	}
+	#email{
+		position: absolute;
+		top: 15%;
+		left: 5%;
+		border-radius: 5px;
+		font-size: 20px;
+		color: salmon;
+		font-family: 'Indie Flower', cursive;
+	}
+	#msg{
+		position: absolute;
+		top: 25%;
+		left: 5%;
+		border-radius: 5px;
+		resize: none;
+		color: salmon;
+		font-family: 'Indie Flower', cursive;
+		font-size: 20px;
+	}
+	#send{
+		position: absolute;
+		top: 75%;
+		left: 6%;
+		border: 2px solid salmon;
+		border-radius: 10px;
+		transform: scale(1.3);
+	}
+	#send:hover{
+		border: 2px solid #3bbced;
+	}
+	#info-4-data{
+		position: absolute;
+		top: 5%;
+		left: 60%;
+		height: 320px;
+		width: 35%;
+		color: #3bbced;
+		text-align: center;
+		font-size: 25px;
+		background-color: rgba(0, 0, 0, .1);
+		font-family: 'indie flower', cursive;
+	}
+	#info-4-data:before{
+		width: 100%;
+		height: 40%;
+		content: '';
+		background-color: rgba(0, 0, 0, .2);
+		z-index: 3;
+		position: absolute;
+		margin-left: -15px;
+		clip-path: polygon(0 0, 100% 0, 50% 100%);
+		transform-origin: 50% 0%;
+	}
+	
+	
+@media screen and (min-width: 1100px)
+{
+	#info-1{
+		height: 600px;
+		top: 280%;		
+	}
+	#logo-icon-home{
+		font-size: 100px;
+        margin-top: 5%;
+        left: 1%;
+	}
+	#wdd-icon-home{
+		font-size: 20px;
+		margin-top: 15%;
+		left: 5%;
+		animation: changecolor 3s infinite;
+		letter-spacing: 2px;
+		font-family: 'Indie flower', cursive;
+	}
+	#info-container{
+		margin-top: 10%;
+		left: 55%;
+		width: 45%;
+		clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+		padding: 20px;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 30px;
+		background-color: rgba(255, 0, 0, .1);
+	}
+	#info-container-more{
+		width: 55%;
+		margin-top: 2%;
+		left: 1%;
+		font-size: 20px;
+		font-family: 'indie flower', cursive;
+		padding: 20px;
+	}
+
+	#behind-image-1-info{
+		right: 5%;
+		width: 50%;
+		font-size: 32px;
+	}
+	#behind-image-1-info-2{
+		left: 3%;
+		width: 35%;
+		font-size: 32px;
+	}
+
+	#uncle-ben{
+		margin-top: 25%;
+		right: 20%;
+		font-size: 32px;
+	}
+	
+
+	#info-2{
+		font-size: 20px;
+		height: 500px;
+	}
+	#why{
+		margin-top: 170px;
+		font-size: 50px;
+		text-align: center;
+		margin-left: 20px;
+		border-radius: 10px;
+		clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+		width: 40%;
+		color: rgba(0, 0, 0, .3);
+		background-color: rgba(0, 0, 0, .2);
+	}
+	#because{
+		margin-top: -100px;
+		font-size: 22px;
+		margin-left: 50%;
+		width: 50%;
+		color: white;
+		transition: 1s;
+		font-family: 'indie flower', cursive;
+	}
+	
+	
+	#what-we-do{
+		margin-top: 18%;
+		font-size: 50px;
+		color: rgba(255, 0, 0, .3);
+		margin-left: 55%;
+		width: 45%;
+		clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+		border-radius: 10px;
+		text-align: center;
+		background-color: rgba(255, 0, 0, .1);
+
+	}
+	#we-do-this{
+		color: white;
+		margin-left: 5%;
+		width: 53%;
+		font-size: 22px;
+		margin-top: -150px;
+		font-family: 'indie flower', cursive;
+	}
+	
+	#stati{
+		position: absolute;
+		margin-top: 10px;
+		margin-left: 1%;
+		height: 400px;
+		width: 33%;
+	}
+	
+	#dynami{
+		position: absolute;
+		margin-top: 440px;
+		height: 360px;
+		margin-left: 63%;
+	}
+	
+	#ecommerce{
+		position: absolute;
+		margin-top: 900px;
+		margin-left: 34%;
+		height: 405px;
+	}
+	
+	
+	#hotel-booking{
+		position: absolute;
+		margin-top: 430px;
+		margin-left: 1%;
+		width: 60%;
+	}
+	
+	#tour-and-travel{
+		position: absolute;
+		width: 60%;
+		margin-top: 10px;
+		margin-left: 36%;
+		height: 360px;
+	}
+	
+	#real-estate{
+		position: absolute;
+		margin-top: 900px;
+		margin-left: 1%;
+		height: 380px;
+	}
+	
+	#school-management{
+		position: absolute;
+		margin-top: 900px;
+		margin-left: 67%;
+	}
+
+	#info-4{
+		margin-top: 110%;
+	}
+	#form-1{
+		background-color: #505050;
+	}
+	#name{
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		width: 31%;
+		border-radius: 5px;
+	}
+	#msg:focus{
+		border: 2px solid #3bbced;
+	}#name:focus{
+		border: 2px solid #3bbced;
+	}#email:focus{
+		border: 2px solid #3bbced;
+	}
+	#email{
+		position: absolute;
+		top: 15%;
+		left: 5%;
+		width: 31%;
+		border-radius: 5px;
+	}
+	#msg{
+		position: absolute;
+		top: 25%;
+		left: 5%;
+		border-radius: 5px;
+		resize: none;
+		width: 31%;
+	}
+	#send{
+		position: absolute;
+		top: 75%;
+		left: 6%;
+		border: 2px solid salmon;
+		border-radius: 10px;
+		transform: scale(1.3);
+	}
+	#send:hover{
+		border: 2px solid #3bbced;
+	}
+	
+	#ball{
+		top: 2570px;
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 1100px)
+{
+	#info-1{
+		width: 100%;
+		height: 600px;
+		position: relative;
+		top: 280%;
+		z-index: 2;
+	}
+	
+	
+	
+
+	#behind-image-1-info{
+		left: 50%;
+		font-size: 25px;
+	}
+	#behind-image-1-info-2{
+		left: 3%;
+		width: 35%;
+		font-size: 25px;
+	}
+
+	#uncle-ben{
+		right: 10%;
+		font-size: 25px;
+	}
+
+	#info-1{
+		height: 500px;
+		top: 1130px;		
+	}
+	#logo-icon-home{
+		font-size: 80px;
+        margin-top: 20%;
+        left: 2%;
+	}
+	#wdd-icon-home{
+		font-size: 17px;
+		margin-top: 29%;
+		left: 9%;
+		animation: changecolor 5s infinite;
+	}
+	#info-container-inside
+	{
+		margin-top: 1000px;
+		height: 300px;
+	}
+	#info-container{
+		margin-top: 7%;
+		left: 60%;
+		font-size: 30px;
+	}
+	#info-container-more{
+		width: 500px;
+		left: 3%;
+		margin-top: 5%;
+		font-size: 17px;
+		padding: 10px;
+	}
+
+	#info-2{
+		font-size: 20px; 
+	}
+	#info-2_1
+	{
+		height: 400px;
+	}
+	#why{
+		margin-top: 120px;
+		font-size: 40px;
+		margin-left: 100px;
+		color: #3bbced;
+	}
+	#because{
+		margin-top: -100px;
+		font-size: 20px;
+		margin-left: 50%;
+		color: white;
+	}
+	#info-2_2
+	{
+		height: 300px;
+	}
+
+	#what-we-do{
+		margin-top: 15%;
+		font-size: 40px;
+		color: #3bbced;
+		margin-left: 70%;
+	}
+	#we-do-this{
+		color: white;
+		margin-left: 5%;
+		width: 60%;
+		height: 200px;
+		font-size: 20px;
+		margin-top: -100px;
+	}
+
+	#stati{
+		position: absolute;
+		margin-top: 450px;
+		margin-left: 2%;
+		height: 400px;
+		width: 45%;
+	}
+	
+	#dynami{
+		position: absolute;
+		margin-top: 450px;
+		height: 370px;
+		margin-left: 50%;
+		width: 45%;
+	}
+	
+	#ecommerce{
+		position: absolute;
+		margin-top: 1350px;
+		margin-left: 50%;
+		width: 45%;
+		height: 405px;
+	}
+	
+	
+	#hotel-booking{
+		position: absolute;
+		margin-top: 870px;
+		margin-left: 5%;
+		width: 90%;
+		height: 450px;
+	}
+	
+	#tour-and-travel{
+		position: absolute;
+		width: 90%;
+		margin-top: 10px;
+		margin-left: 5%;
+		height: 74%;
+	}
+	
+	#real-estate{
+		position: absolute;
+		margin-top: 1350px;
+		margin-left: 1%;
+		width: 45%;
+		height: 380px;
+	}
+	
+	#school-management{
+		position: absolute;
+		margin-top: 1800px;
+		margin-left: 5%;
+		width: 90%;
+	}
+	#school-management span{
+		font-size: 20px;
+	}
+
+	#info-4{
+		margin-top: 230%;
+	}
+
+	#ball{
+		height: 0px;
+		width: 0px;
+		z-index: 0;
+	}
+
+}
