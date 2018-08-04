@@ -1,0 +1,80 @@
+#prices-prices{
+			position: absolute;
+			top: 20%;
+			left: 20%;
+			font-size: 25px;
+			color: salmon;
+		}
+		#lists{
+			position: absolute;
+			top: 30%;
+			left: 2%;
+			color: grey;
+		}
+		#lists div:hover{
+			animation: zoom 20s forwards;
+		}
+		#head{
+			font-size: 40px;
+			text-align: center;
+			color: salmon;
+		}
+		#stati-prices{
+			width: 100%;
+			border-radius: 5px;
+			padding: 5px;
+			background-color: rgba(0, 0, 255, 0.1);
+			border: 1px solid rgba(0, 0, 255, 0.2);
+		}
+		#dynami-prices{
+			position: relative;
+			width: 100%;
+			margin-top: 20px;
+			padding: 5px;
+			background-color: rgba(0, 0, 255, 0.1);
+			border-radius: 5px;
+			border: 1px solid rgba(0, 0, 255, 0.2);
+		}
+		#web-app-prices{
+			position: relative;
+			margin-top: 20px;
+			width: 100%;
+			padding: 5px;
+			background-color: rgba(0, 0, 255, 0.1);
+			border-radius: 5px;
+			border: 1px solid rgba(0, 0, 255, 0.2);
+		}
+		#mobile-prices{
+			position: absolute;
+			margin-top: 20px;
+			padding: 5px;
+			background-color: rgba(0, 0, 255, 0.1);
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid rgba(0, 0, 255, 0.2);
+		}
+		#info{
+			position: relative;
+			top:2%;
+			width: 100%;
+			text-align: center;
+			font-size: 25px;
+			color: salmon;
+		}
+		#answer{
+			position: relative;
+			top:15%;
+			padding: 5px;
+			border: 1px solid rgba(0, 0, 255, 0.1);
+			border-radius: 2px;
+			font-size: 25px;
+			color: grey;
+			background-color: rgba(0, 0, 255, 0.1);
+			
+		}
+		#prc-prc{
+			margin-top: 10px;
+			color: rgba(0, 0, 255, 0.6);
+			font-size: 30px
+		}
+		

@@ -51,6 +51,7 @@
             body{
                 background-color: white;
                 color: white;
+
             }
 
             body a{
@@ -60,6 +61,7 @@
             body a:hover{
                 color: salmon;
                 text-decoration: none;
+
             }
             mark{
                 background-color: #3bbced;
@@ -128,7 +130,6 @@
                 background-color: white;
                 height: 100%;
                 transition: transform 5s;
-                
             }
             #three-lines{
                 cursor: pointer;

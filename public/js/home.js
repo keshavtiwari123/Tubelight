@@ -49,21 +49,21 @@ var arrow = 1;
                 $("#nav-services").click(function(){
                     $('.services').css('animation', 'navbar-show .5s forwards');
                     $('.marketing').css('animation', 'navbar-hide .5s forwards');
-                    $(this).css('color', 'salmon');
-                    $("#nav-marketing").css('color', 'white')
+                    $(this).css('color', '#3bbcde');
+                    $("#nav-marketing").css('color', 'black')
 
                 });
                 $("#nav-marketing").click(function(){
                     $('.marketing').css('animation', 'navbar-show .5s forwards');
                     $('.services').css('animation', 'navbar-hide .5s forwards');
-                    $(this).css('color', 'salmon');
-                    $("#nav-services").css('color', 'white')
+                    $(this).css('color', '#3bbcde');
+                    $("#nav-services").css('color', 'black')
                 });
                 $("#footer, #sidebar, #enquiry, #message, #container").click(function(){
                     $('.services').css('animation', 'navbar-hide .5s forwards');
                     $('.marketing').css('animation', 'navbar-hide .5s forwards');
-                    $("#nav-services").css('color', 'white');
-                    $("#nav-marketing").css('color', 'white');
+                    $("#nav-services").css('color', 'black');
+                    $("#nav-marketing").css('color', 'black');
                     if(arrow == 0)
                     {
                         arrow = 1;

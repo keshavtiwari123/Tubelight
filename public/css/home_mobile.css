@@ -61,11 +61,11 @@ mark{
         @keyframes arrow_down
 		{
 			from{-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 60%, 100% 60%, 50% 100%, 0% 60%, 40% 60%); background-color: #3bbced;}
-			to{-webkit-clip-path: polygon(50% 0%, 100% 40%, 60% 40%, 60% 100%, 40% 100%, 40% 40%, 0% 40%); transform: translateY(70px); background-color: salmon;}
+			to{-webkit-clip-path: polygon(50% 0%, 100% 40%, 60% 40%, 60% 100%, 40% 100%, 40% 40%, 0% 40%); transform: translateY(80px); background-color: salmon;}
 		}
 		@keyframes arrow_up
 		{
-			from{-webkit-clip-path: polygon(50% 0%, 100% 40%, 60% 40%, 60% 100%, 40% 100%, 40% 40%, 0% 40%); transform: translateY(70px); background-color: salmon;}
+			from{-webkit-clip-path: polygon(50% 0%, 100% 40%, 60% 40%, 60% 100%, 40% 100%, 40% 40%, 0% 40%); transform: translateY(80px); background-color: salmon;}
 			to{-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 60%, 100% 60%, 50% 100%, 0% 60%, 40% 60%); transform: translateY(0px); background-color: #3bbced}
 		}
 
@@ -77,9 +77,7 @@ mark{
             form{transform: scaleY(1)}
             to{transform: scaleY(0)}
         }
-li{
-            font-family: 'indie flower', cursive;
-        }
+
         li:nth-child(even){
             animation: changecolor 2s infinite;
         }
@@ -118,7 +116,6 @@ body{
 	left: 5%;
 	color: salmon;
 	opacity: .7;
-	font-family: 'Indie Flower', cursive;
 }
 #wdd-head
 {
@@ -127,7 +124,6 @@ body{
 	top: 45px;
 	left: 18%;
 	color: #3bbced;
-    font-family: 'Indie Flower', cursive;
 }
 
 
@@ -200,7 +196,6 @@ body{
                 position: absolute;
                 top: 73%;
                 margin-left: -30px;
-                font-family: 'indie flower', cursive;
                 font-size: 35px;
                
             }
@@ -216,7 +211,6 @@ body{
                 margin-left: 20px;
                 font-size: 9px;
                 width: 250px;
-                font-family: 'indie flower', cursive;
                 margin-left: -30px;
                 animation: changecolor 5s infinite;
             }
@@ -276,7 +270,6 @@ body{
     position: absolute;
     left: 5%;
     opacity: .7;
-    font-family: 'Indie Flower', cursive;
 }
 #nav-mobile-wdd
 {
@@ -298,10 +291,10 @@ body{
 {
 	transform-origin: 0% -0%;
     transform: scaleY(0);
-    width: 100%;
+    width: 97%;
     position: absolute;
     top: 100%;
-    left: 1%;
+    left: 2%;
     background-color: #3bcdef;
     font-size: 18px;
 }
@@ -321,17 +314,16 @@ body{
 {
 	transform-origin: 0% -0%;
     transform: scaleY(0);
-    width: 300px;
-    height: 100px;
     position: absolute;
     top: 100%;
-    left: 1%;
+    left: 2%;
+    width: 97%;
     background-color: #3bbced;
     font-size: 18px;
     width: 100%;
 }
 .marketing div{
-    height: 33%;
+    height: 30px;
     border: 1px solid white;
     border-radius: 5px;
     
@@ -394,10 +386,10 @@ body{
 	width: 25px;
 	height: 25px;
 	z-index: 5;
-	-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 80%, 80% 60%, 100% 60%, 50% 100%, 0% 60%, 20% 60%, 40% 80%);
+	-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 60%, 100% 60%, 50% 100%, 0% 60%, 40% 60%);
 	background-color: #3bbced;
 	position: fixed;
-	top: 20px;
+	top: 10px;
 	left: 93%;
 }
 
@@ -416,10 +408,8 @@ body{
     top: 20px;
     left: 20px;
     font-size: 40px;
-    font-family: 'Indie Flower', cursive;
 }
 #wdd{
-    font-family: 'Indie Flower', cursive;
     font-size: 10px;
     position: absolute;
     top: 44px;

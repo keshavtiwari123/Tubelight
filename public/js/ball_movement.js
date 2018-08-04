@@ -5,7 +5,7 @@ var left = $(window).width() - 50;
 var left_original = $(window).width() - 50;
 var ratio = 1;
 var deg = 0;
-$('#ball').css('background-color', 'rgba(0, 0, 0, .3)')
+$('#ball').css('background-color', 'rgba(0, 0, 0, 1)')
 $(document).ready(function(){
 	$(document).scroll(function(){
 		var speed_factor = 1;
@@ -37,14 +37,16 @@ function move_left(speed)
 	if(left>0)
 	{	
 		$('#ball').css('left', left).css('margin-top', ratio);
+		rotate();
 	}
 	else{
 		left = 0;
 		$('#ball').css('left', 0).css('margin-top', ratio);
 		ball_down = ball_down*-1;
 		x = x + 300*ball_down;
-		color = 255*ball_down;
-		$('#ball').css('top', x).css('background-color', 'rgba('+color+', 0, 0, .3)');
+		bcolor = 255*ball_down;
+		color = -bcolor;
+		$('#ball').css('top', x).css('background-color', 'rgba('+bcolor+', '+bcolor+', '+bcolor+', 1)').css('color', 'rgb('+color+', '+color+', '+color+')');
 	}
 }
 function move_right(speed)
@@ -55,10 +57,18 @@ function move_right(speed)
 	if(left < left_original)
 	{
 		$('#ball').css('left', left).css('margin-top', ratio);
+		rotate();
 	}
 	else
 	{
 		left = left_original;
 		$('#ball').css('left', left).css('margin-top', ratio);
+
 	}
+}
+
+function rotate()
+{
+	var deg = left/0.43639;
+	$('#ball').css('transform', 'rotateZ('+deg+'deg)');
 }

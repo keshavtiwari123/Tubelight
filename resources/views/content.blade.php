@@ -15,7 +15,7 @@
 	 <div id="wdd-icon-home">WEB &nbsp;  DESIGN  &nbsp; AND  &nbsp; DEVELOPMENT &nbsp; COMPANY</div>
 	</div>
 	 <div id="info-container-inside">
-	 	<div id="info-container">WE MAKE YOU LOOK GOOD ONLINE</div>
+	 	<div id="info-container">YOU LOOK BETTER ONLINE</div>
 	 	<div id="info-container-more">A great website is necessary for a brand and its growth. You need to grow online in order to mark your active presence in the market and we are here to help you with that. We understand your needs and we are happy to provide the best service that you can get<br><br>With our perfect designing you won`t look good you look GREATTT!!!</div>
 	</div>
 
@@ -45,25 +45,38 @@
 				<div id="stati" class="type">
 					<img src="{{URL::asset('storage/static.png')}}" id="stati-image">
 					<span>STATIC</span>
+					@if($mobile)<div id=space></div>@endif
 				</div>
 				<div id="dynami" class="type">
 					<img src="{{URL::asset('storage/dynamic.png')}}" id="stati-image">
-				<span>DYNAMIC</span></div>
+					<span>DYNAMIC</span>
+					@if($mobile)<div id=space></div>@endif
+				</div>
 				<div id="ecommerce" class="type">
 					<img src="{{URL::asset('storage/e-commerce.png')}}" id="stati-image">
-				<span>ECOMMERCE</span></div>
+					<span>ECOMMERCE</span>
+					@if($mobile)<div id=space></div>@endif
+				</div>
 				<div id="hotel-booking" class="type">
 					<img src="{{URL::asset('storage/hotel.png')}}" id="stati-image">
-				<span>HOTEL BOOKING</span></div>
+					<span>HOTEL BOOKING</span>
+					@if($mobile)<div id=space></div>@endif
+				</div>
 				<div id="tour-and-travel" class="type">
 					<img src="{{URL::asset('storage/tour.png')}}" >
-				<span>TOUR AND TRAVEL</span></div>
+					<span>TOUR AND TRAVEL</span>
+					@if($mobile)<div id=space></div>@endif
+				</div>
 				<div id="real-estate" class="type">
 					<img src="{{URL::asset('storage/real-estate.png')}}" id="stati-image">
-				<span>REAL ESTATE</span></div>
+					<span>REAL ESTATE</span>
+					@if($mobile)<div id=space></div>@endif
+				</div>
 				<div id="school-management" class="type">
 					<img src="{{URL::asset('storage/school.png')}}" id="stati-image">
-				<span>School/College Website and management system</span></div>
+					<span>School/College Website and management system</span>
+					@if($mobile)<div id=space></div>@endif
+				</div>
 				
 			</div>
 			
@@ -79,11 +92,14 @@
 				</div>
 				<div id="info-4-data">GOT A NEW PROJECT WRITE US ABOUT IT, LETS SEE WHAT WE CAN DO.<br><br>Or IF YOU WANT TO TALK, FEEL FREE TO CALL<br> +91-7052613187</div>
 			</div>
-	@if(!$mobile)	<div id="ball"></div>	@endif
+			<div id='space-to-footer'></div>
+	@if(!$mobile)	<div id="ball">:)</div>	@endif
+
 @endsection
 
 
 @section('javascript')
+	@if(!$mobile)
 	<script type="text/javascript">
 		$(document).ready(function () {
 			var scroll = $(document).scrollTop();
@@ -94,5 +110,6 @@
 			});
 		});
 	</script>
+	@endif
 	@if(!$mobile) <script type="text/javascript" src="{{URL::asset('js/ball_movement.js')}}"></script> @endif
 @endsection

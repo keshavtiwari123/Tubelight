@@ -1,0 +1,61 @@
+#about_website{
+			color: rgba(0, 0, 255, 0.5);
+			width: 98%;
+			font-size: 20px;
+			position: absolute;
+			top: 20%;
+			left: 1%;
+			padding: 10px;
+			border-radius: 3px;
+			border: 1px solid rgba(0, 0, 255, 0.3);
+			background-color: rgba(0, 0, 255, 0.1);
+		}
+		#wiki{
+			position: absolute;
+			top: 67%;
+			left: 60%;
+			text-align: right;
+			font-size: 25px;
+			color: rgba(0, 0, 255, 0.6);
+		}
+		#website{
+			color: salmon;
+			font-size: 35px;
+			position: absolute;
+			top: 10%;
+			width: 100%;
+			text-align: center;
+		}
+		#image{
+			position: relative;
+			margin-top: 140%;
+			overflow: hidden;
+			width: 100%;
+		}
+		#image img{
+			width: 100%;
+		}
+		#we-deliver{
+			position: absolute;
+			margin-top: 20%;
+			left: 2%;
+			color: grey;
+			width: 98%;
+			padding: 2%;
+			font-size: 25px;
+			border-radius: 3px;
+			background-color: rgba(255, 0, 0, .2);
+			border: 1px solid rgba(255, 0, 0, .3);
+		}
+		#price{
+		position: absolute;
+			margin-top: 6%;
+			left: 10%;
+			color: black;
+			font-size: 30px;	
+		}
+		#space{
+			position: absolute;
+			margin-top: 70%;
+			height: 10px;
+		}

@@ -1,83 +1,9 @@
 @extends('welcome')
-	<style type="text/css">
-		#prices-prices{
-			position: absolute;
-			top: 20%;
-			left: 20%;
-			font-size: 25px;
-			color: salmon;
-		}
-		#lists{
-			position: absolute;
-			top: 30%;
-			left: 2%;
-			color: grey;
-		}
-		#lists div:hover{
-			animation: zoom 20s forwards;
-		}
-		#head{
-			font-size: 40px;
-			text-align: center;
-			color: salmon;
-		}
-		#stati-prices{
-			height: 400px;
-			width: 400px;
-			border-radius: 5px;
-			border: 1px solid grey;
-			box-shadow: 4px 4px 8px grey;
-		}
-		#dynami-prices{
-			height: 400px;
-			width: 400px;
-			margin-left: 430px;
-			margin-top: -400px;
-			border-radius: 5px;
-			border: 1px solid grey;
-			box-shadow: 4px 4px 8px grey;
-		}
-		#web-app-prices{
-			height: 400px;
-			width: 400px;
-			margin-left: 860px;
-			margin-top: -400px;
-			border-radius: 5px;
-			border: 1px solid grey;
-			box-shadow: 4px 4px 8px grey;
-		}
-		#mobile-prices{
-			height: 400px;
-			width: 400px;
-			border-radius: 5px;
-			border: 1px solid grey;
-			box-shadow: 4px 4px 8px grey;
-			margin-top: 50px;
-		}
-		#info{
-			position: relative;
-			top:2%;
-			width: 100%;
-			text-align: center;
-			font-size: 25px;
-			color: salmon;
-		}
-		#answer{
-			position: relative;
-			top:15%;
-			width: 100%;
-			left: 10%;
-			font-size: 25px;
-			color: grey;
-			
-		}
-		#prc-prc{
-			margin-top: 10px;
-			color: red;
-			font-size: 30px
-		}
-		
-	</style>
+	@if($mobile)
+		<link rel="stylesheet" type="text/css" href="{{URL::asset('css/prices_mobile.css')}}">
+	@else
+		<link rel="stylesheet" type="text/css" href="{{URL::asset('css/price.css')}}">
+	@endif
 @section('content')
 	<div id="prices-prices">PRICES</div>
 	<div id="lists">

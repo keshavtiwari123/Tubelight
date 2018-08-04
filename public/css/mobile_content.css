@@ -12,6 +12,7 @@ mark
 }
 #behind-image-1{
 	position: absolute;
+	top: 0%;
 	width: 100%;
 	height: 100%;
 	margin-top: 50px;
@@ -47,7 +48,7 @@ mark
 
 #info-1{
 		position: relative;
-		margin-top: 400%;
+		margin-top: 200%;
 		width: 100%;
 	}
 #logo-icon-home{
@@ -55,7 +56,6 @@ mark
         margin-top: 100%;
         font-size: 55px;
         margin-left: -40px;
-        font-family: 'Indie Flower', cursive;
 	}
 	#wdd-icon-home{
 		position: absolute;
@@ -63,33 +63,37 @@ mark
 		margin-top: -25px;
 		margin-left: 10px;
 		font-size: 13px;
-		font-family: 'Indie Flower', cursive;
 	}
 
 #info-container-inside
 	{
 		height: 400px;
 		margin-top: 20%;
-		background-color: rgba(255, 0, 0, .2);
+		background-color: rgba(0, 0, 255, .2);
 		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
 		z-index: 3;
 	}
 	#info-container{
 		position: absolute;
 		font-size: 25px;
-		margin-top: 270px;
-		padding-left: 5px;
+		margin-top: 275px;
+		padding: 5px;
 		width: 100%;
 		color: white;
-		background-color: rgba(255, 0, 0, .15);
+		background-color: rgba(0, 0, 255, .15);
 		z-index: 3;
+		border: 1px solid rgba(0, 0, 255, .4);
+		border-radius: 10px;
 	}
 	#info-container-more{
 		position: absolute;
-		padding: 10px;
+		padding: 15px;
 		font-size: 18px;
 		color: white;
-		font-family: 'indie flower', cursive;
+		background-color: rgba(0, 0, 255, 0.1);
+		padding: 5px;
+		border: 1px solid rgba(0, 0, 255, .4);
+		border-radius: 5px;
 	}
 #info-2{
 		position: absolute;
@@ -116,14 +120,21 @@ mark
 		background-color: rgba(0, 0, 0, .2);
 		font-size: 30px;
 		letter-spacing: 2px;
-		color: rgba(255, 255, 255, .6);
+		color: rgba(255, 255, 255, 1);
 		text-align: center;
+		margin-top: 50px;
+		padding-left: 90px;
+		border-radius: 10px;
+		border: 1px solid rgba(0, 0, 0, 0.4);
 	}
 	#because{
 		padding: 10px;
 		color: white;
+		margin-top: 20px;
 		font-size: 18px;
-		font-family: 'indie flower', cursive;
+		background-color: rgba(0, 0, 0, .2);
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.4)
 	}
 	
 	
@@ -131,68 +142,94 @@ mark
 		margin-top: 55px;
 		background-color: rgba(255, 0, 0, .1);
 		font-size: 30px;
-		color: rgba(255, 0, 0, .3);
+		color: rgba(255, 255, 255, 1);
+		border-radius: 10px;
+		padding-left: 20px;
+		border: 1px solid rgba(255, 0, 0, 0.4);
 	}
 	#we-do-this{
 		color: white;
 		padding: 10px;
 		font-size: 18px;
-		font-family: 'indie flower', cursive;
+		border-radius: 5px;
+		border: 1px solid rgba(255, 0, 0, 0.4);
+		margin-top: 20px;
+		background-color: rgba(255, 0, 0, 0.1);
 	}
 #info-3
 {
-	margin-top: 200%;
+	margin-top: calc(200% - 20px);
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 #info-3-info{
 	width: 100%;
-	font-family: 'indie flower', cursive;
 	text-align: center;
 	font-size: 18px;
+	color: white;
+	position: relative;
+	top: 24px;
+}
+#space{
+	width: 100%;
+	height: 20px;
+	background-color: white;
+	position: relative;
+	top: 30px;
 }
 #info-3 img{
 	position: relative;
-	width: 100%;
+	width: 99%;
+	margin-top: 30px;
+	border: 2px solid rgba(0, 0, 0, .5);
 }
-#info-3 div:after{
-	width: 100%;
-	position: relative;
-	height: 10%;
-	content: '';
-	background-color: red;
-}
+
 #info-3 span{
 	width: 100%;
-	font-family: 'indie flower', cursive;
 	text-align: center;
 	font-size: 30px;
 	position: absolute;
-	margin-top: -50px;
-	color: rgba(255, 0, 0, .5);
+	margin-top: -8px;
+	color: rgba(255, 255, 255, 0.9);
 }
-
+#school-management span{
+	font-size: 14px;
+	margin-top: 3px;
+}
 #info-4{
 	position: relative;
+	background-color: rgba(0, 0, 255, 0.1);
+	height: 600px;
 }
 #info-4-data{
 	position: absolute;
 	margin-top: 10%;
+	width: 95%;
+	left: 2.5%;
+	padding: 5px;
+	border: 1px solid rgba(0, 0, 255, .3);
+	background-color: rgba(0, 0, 255, 0.1);
+	font-size: 17px;
+	color: white;
+	font-weight: bold;
 }
 #form-1{
 		position: absolute;
-		margin-top: 50%;
+		margin-top: 65%;
 	}
 	#name{
 		position: relative;
 		left: 5%;
 		width: 90%;
 		border-radius: 5px;
+		font-size: 20px;
 	}
 	#msg:focus{
-		border: 2px solid #3bbced;
+		border: 2px solid blue;
 	}#name:focus{
-		border: 2px solid #3bbced;
+		border: 2px solid blue;
 	}#email:focus{
-		border: 2px solid #3bbced;
+		border: 2px solid blue;
 	}
 	#email{
 		position: relative;
@@ -200,12 +237,12 @@ mark
 		left: 5%;
 		width: 90%;
 		border-radius: 5px;
+		font-size: 20px;
 	}
 	#msg{
 		position: relative;
 		left: 5%;
 		margin-top: 10px;
-		font-family: 'indie flower', cursive;
 		font-size: 20px;
 		width: 90%;
 		border-radius: 5px;
@@ -214,7 +251,17 @@ mark
 	#send{
 		position: relative;
 		margin-left: 10%;
-		border-radius: 10px;
+		border-radius: 2px;
+		background-color: rgba(0, 0, 255, .1);
+		border: 1px solid rgba(0, 0, 255, .3);
 		transform: scale(1.3);
 		box-shadow: none;
+
 	}
+#space-to-footer{
+	width: 300px;
+	height: 600px;
+	background-color:white;
+	position: relative;
+	top: 5px;
+}

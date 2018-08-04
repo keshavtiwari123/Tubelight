@@ -27,14 +27,17 @@
 	#behind-image-1-div{
 		position: absolute;
 		top: 1%;
-		height: 95%;
+		height: 120%;
 		width: 100%;
 	}
 	#behind-image-1-info{
 		position: absolute;
 		margin-top: 19%;
 		color: white;
-		z-index: 2;	
+		z-index: 2;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 5px;
+		padding: 10px;	
 	}
 	#behind-image-1-info-2{
 		position: absolute;
@@ -46,6 +49,7 @@
 	#uncle-ben{
 		position: absolute;
 		margin-top: 25%;
+		background-color: rgba(0, 0, 0, 0.5);
 		color: white;
 		z-index: 2;
 	}
@@ -174,7 +178,7 @@
 		position: absolute;
 		width: 100%;
 		height: 500px;
-		background-color: rgba(0, 0, 0, .1);
+		background-color: rgba(0, 0, 255, .2);
 	}
 
 	#form-1{
@@ -219,13 +223,13 @@
 	#send{
 		position: absolute;
 		top: 75%;
-		left: 6%;
-		border: 2px solid salmon;
-		border-radius: 10px;
-		transform: scale(1.3);
+		left: 8%;
+		border: 1px solid salmon;
+		border-radius: 5px;
+		transform: scale(2);
 	}
 	#send:hover{
-		border: 2px solid #3bbced;
+		transform: scale(2.1);
 	}
 	#info-4-data{
 		position: absolute;
@@ -233,22 +237,12 @@
 		left: 60%;
 		height: 320px;
 		width: 35%;
-		color: #3bbced;
+		color: #fff;
 		text-align: center;
 		font-size: 25px;
-		background-color: rgba(0, 0, 0, .1);
+		background-color: rgba(0, 0, 255, .1);
 		font-family: 'indie flower', cursive;
-	}
-	#info-4-data:before{
-		width: 100%;
-		height: 40%;
-		content: '';
-		background-color: rgba(0, 0, 0, .2);
-		z-index: 3;
-		position: absolute;
-		margin-left: -15px;
-		clip-path: polygon(0 0, 100% 0, 50% 100%);
-		transform-origin: 50% 0%;
+		border-radius: 5px;
 	}
 	
 	
@@ -442,20 +436,15 @@
 		resize: none;
 		width: 31%;
 	}
-	#send{
-		position: absolute;
-		top: 75%;
-		left: 6%;
-		border: 2px solid salmon;
-		border-radius: 10px;
-		transform: scale(1.3);
-	}
-	#send:hover{
-		border: 2px solid #3bbced;
-	}
+	
 	
 	#ball{
 		top: 2570px;
+		color: white;
+		background-color: black;
+		font-size: 30px;
+		text-align: center;
+		transition:  top .5s, background .6s;
 	}
 }
 @media screen and (min-width: 500px) and (max-width: 1100px)
