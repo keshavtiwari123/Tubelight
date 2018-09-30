@@ -26,7 +26,8 @@
 		@if($mobile)
 		<img src="{{URL::asset('storage/mobile_background.jpg')}}" id="behind-image-1">
 		@else
-		<img src="{{URL::asset('storage/download1.jpg')}}" id="behind-image-1">@endif
+		<img src="{{URL::asset('storage/dow.jpg')}}" id="behind-image-1">
+		@endif
 	</div>
 	
 	<div id="info-2">
@@ -37,9 +38,10 @@
 			
 			<div id="info-2_2">
 				<div id="what-we-do">WHAT WE DO?</div>
-				<div id="we-do-this">&#8594; We design Websites and Develop web-Applications.<br>&#8594; Responsive Web Design for real time experience.<br>&#8594; Web Redesign to look modern and more<br>&#8594; eCommerce Website design to raise your Brand Awareness.<br>&#8594; Mobile web design<br>&#8594; You ask it and we have got it!</div>
+				<div id="we-do-this">&#8594; We design Websites and Develop web-Applications for your Brand.<br>&#8594; Responsive Web Design for real time experience.<br>&#8594; Web Redesign to look modern and more<br>&#8594; eCommerce Website design and development for your Business.<br>&#8594; Mobile web design<br>&#8594; You ask it and we have got it!</div>
 			</div>
 	</div>
+	
 			<div id="info-3">
 				<div id="info-3-info">Most commonly ordered by our customres.</div>
 				<div id="stati" class="type">
@@ -90,7 +92,7 @@
 						<button type="submit" value="SEND" id="send">SEND</button>
 					</form>
 				</div>
-				<div id="info-4-data">GOT A NEW PROJECT WRITE US ABOUT IT, LETS SEE WHAT WE CAN DO.<br><br>Or IF YOU WANT TO TALK, FEEL FREE TO CALL<br> +91-7052613187</div>
+				<div id="info-4-data">GOT A NEW PROJECT WRITE US ABOUT IT, LETS SEE WHAT WE CAN DO.<br><br>Or IF YOU WANT TO TALK, FEEL FREE TO CALL OR WHATSAPP ON<br> +91-7052613187</div>
 			</div>
 			<div id='space-to-footer'></div>
 	@if(!$mobile)	<div id="ball">:)</div>	@endif
@@ -111,5 +113,14 @@
 		});
 	</script>
 	@endif
-	@if(!$mobile) <script type="text/javascript" src="{{URL::asset('js/ball_movement.js')}}"></script> @endif
+	@if(!$mobile)
+		<script type="text/javascript" src="{{URL::asset('js/ball_movement.js')}}"></script>
+		<script type="text/javascript" src="{{URL::asset('js/image-animate.js')}}"></script>
+		<script type="text/javascript">
+			$(".type").tilt({
+				scale: 0.8,
+				reset: false,
+			});
+		</script>
+	@endif
 @endsection

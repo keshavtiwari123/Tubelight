@@ -11,9 +11,7 @@
 			left: 2%;
 			color: grey;
 		}
-		#lists div:hover{
-			animation: zoom 20s forwards;
-		}
+		
 		#head{
 			font-size: 40px;
 			text-align: center;
@@ -74,4 +72,13 @@
 			color: red;
 			font-size: 30px
 		}
-		
+.box{
+	transform-style: preserve-3d;
+}
+.bx-in{
+	transform: translateZ(100px) scale(0.8);
+}
+.box:hover .bx-in{
+	background-color: rgba(0, 0, 255, 0.1);
+	margin-top: 30px;
+}

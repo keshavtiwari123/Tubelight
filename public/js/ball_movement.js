@@ -1,8 +1,8 @@
 var scroll = $(document).scrollTop();
 var prev_scroll = 0
 var ball_down = -1;
-var left = $(window).width() - 50;
-var left_original = $(window).width() - 50;
+var left = $(window).width() - 70;
+var left_original = $(window).width() - 70;
 var ratio = 1;
 var deg = 0;
 $('#ball').css('background-color', 'rgba(0, 0, 0, 1)')
@@ -63,7 +63,6 @@ function move_right(speed)
 	{
 		left = left_original;
 		$('#ball').css('left', left).css('margin-top', ratio);
-
 	}
 }
 

@@ -10,26 +10,26 @@
             
             @keyframes line1{
                 from{transform: translateX(0) rotateZ(-45deg)}
-                to{transform: translate(-90px, 10px) rotateZ(-90deg); background-color: #3bbced}
+                to{transform: translate(-90px, 10px) rotateZ(-90deg); background-color: rgba(0, 0, 0, 0.7)}
             }
             @keyframes line2{
                 from{transform: translateX(0) rotateZ(-45deg)}
-                to{transform: translate(-90px, -10px) rotateZ(-90deg); background-color: #3bbced}
+                to{transform: translate(-90px, -10px) rotateZ(-90deg); background-color: rgba(0, 0, 0, 0.7)}
             }@keyframes line3{
                 from{transform: translateX(0) }
-                to{transform: translateX(-90px) rotateZ(-90deg); background-color: #3bbced}
+                to{transform: translateX(-90px) rotateZ(-90deg); background-color: rgba(0, 0, 0, 0.7)}
             }
 
             @keyframes lineback1{
                 from{transform: translate(-90px, -10px) rotateZ(-90deg)}
-                to{transform: translateX(0px) rotateZ(45deg); background-color: salmon}
+                to{transform: translateX(0px) rotateZ(45deg); background-color: rgba(255, 255, 255, 1)}
             }
             @keyframes lineback2{
                 from{transform: translate(-90px, -10px) rotateZ(-90deg)}
-                to{transform: translateX(0px) rotateZ(-45deg); background-color: salmon}
+                to{transform: translateX(0px) rotateZ(-45deg); background-color: rgba(255, 255, 255, 1)}
             }@keyframes lineback3{
                 from{transform: translateX(-90px) rotateZ(-90deg)}
-                to{transform: translateX(0px) rotateZ(-45deg); background-color: salmon}
+                to{transform: translateX(0px) rotateZ(-45deg); background-color: rgba(255, 255, 255, 1)}
             }
             @keyframes enlarge{
                 0%{transform: scale(.8)}
@@ -45,7 +45,7 @@
             }
             @keyframes zoom{
                 from{transform: scale(1)}
-                to{transform: scale(1.2); opacity: .5;}
+                to{transform: scale(1.1); opacity: .3;}
             }
 
             body{
@@ -59,14 +59,14 @@
                 color: white;
             }
             body a:hover{
-                color: salmon;
+                color: blue;
                 text-decoration: none;
 
             }
             mark{
-                background-color: #3bbced;
+                background-color: rgba(10, 0, 100, 0.5);
                 color: white;
-                opacity: .9;
+                opacity: 1;
             }
 
         li{
@@ -85,20 +85,29 @@
         }
 
         @keyframes changecolor{
-            0%{color: white}
-            10%{color: blue}
-            20%{color: red}
-            30%{color: yellow}
-            40%{color: pink}
-            50%{color: orange}
-            60%{color: purple}
-            70%{color: brown}
-            80%{color: silver}
-            90%{color: gold}
-            100%{color: salmon}
+            0%{color: rgba(255, 0, 0, 0.3);}
+            20%{color: rgba(0, 0, 255, 0.5);}
+            40%{color: rgba(255, 0, 0, 0.7);}
+            60%{color: rgba(0, 0, 255, 0.9);}
+            80%{color: rgba(255, 0, 0, 0.1);}
+            100%{color: rgba(0, 0, 255, 0.3);}
         }
             #header a:hover{
-                color: grey;
+                color: black;
+            }
+            #logo{
+                position: fixed;
+                left: 5%;
+                font-size: 40px;
+                margin-top: 4px;
+                font-family: 'indie flower', cursive;
+            }
+            #wdd-head{
+                position: fixed;
+                top: 53px;
+                left: 7%;
+                font-size: 8px;
+                color: rgba(0, 0, 0, 0.7);
             }
             #header{
                 position: fixed;
@@ -106,11 +115,12 @@
                 left: 0px;
                 width: 100%;
                 height: 52px;
-                background-color: salmon;
+                background-color: rgba(100, 0, 100, 0.6);
                 text-align: center;
                 z-index: 100;
                 transition: transform .5s;
             }
+            
             #message:hover{
                 animation: enlarge .5s forwards;
                 cursor: pointer;
@@ -139,75 +149,59 @@
             #line-1{
                 width: 8px;
                 height: 40px;
-                border-radius: 20px;
+                border-radius: 2px;
                 transform: translate(-90px, 10px) rotateZ(-90deg);
-                background-color: #3bbced;
+                background-color: rgba(0, 0, 0, 0.7);
             }
             #line-2{
                 width: 8px;
                 height: 40px;
-                border-radius: 20px;
+                border-radius: 2px;
                 transform: translate(-90px, -10px) rotateZ(-90deg);
-                background-color: #3bbced;
+                background-color: rgba(0, 0, 0, 0.7);
             }
             #line-3{
                 width: 8px;
                 height: 40px;
-                border-radius: 20px;
+                border-radius: 2px;
                 transform: translateX(0px) rotateZ(-45deg);
                 transform: translateX(-90px) rotateZ(-90deg);
-                background-color: #3bbced;
+                background-color: rgba(0, 0, 0, 0.7);
             }
             .big{
                 font-size: 25px;
             }
-
-            #nav-services{
+            .head-data{
+                font-size: 18px;
                 position: absolute;
-                right: 350px;
-                top: 30px;
-                width: 6%;
-                border-radius: 5px;
-                font-weight: bold;
+                top: 20px;
+                width: 120px;
+            }
+            #nav-services{
+                left: calc(100% - 600px);
             }
             
             #nav-marketing{
-                position: absolute;
-                right: 260px;
-                top: 30px;
-                width: 7%;
-                border-radius: 5px;
-                font-weight: bold;
-
+                left: calc(100% - 480px);
             }
             #our-work{
-                position: absolute;
-                right: 140px;
-                top: 30px;
-                width: 100px;
-                font-weight: bold;
+                left: calc(100% - 360px);
             }
             #prices{
-                position: absolute;
-                right: 80px;
-                top: 30px;
-                width: 6%;
-                font-weight: bold;
+                left: calc(100% - 240px);
             }
             #blog{
-                position: absolute;
-                right: 20px;
-                top: 30px;
-                width:6%;
-                font-weight: bold;
+                left: calc(100% - 120px);
             }
+
+
             #sidebar{
                 background-color: #505050;
                 box-shadow: 3px 2px 3px black;
                 text-align: center;
                 transform: translateX(-100%);
                 z-index: 3;
-                opacity: .7;
+                opacity: .9;
                 border-radius-left-top: 10px;
             }
             #home-side{
@@ -263,7 +257,6 @@
                 position: absolute;
                 top: 73%;
                 margin-left: -70px;
-
                 font-size: 35px;
                 transform: rotateZ(60deg);
             }
@@ -340,7 +333,6 @@
                 left: 5%;
                 width: 35%;
                 font-size: 15px;
-                font-family: 'indie flower', cursive;
             }
             #wdd{
                 font-size: 8px;
@@ -508,6 +500,10 @@
             
 @media screen and (min-width: 1100px)
 {
+
+#right-lines, #nav-dorp-tablet{
+    visibility: hidden;
+}
             #services{
                 position: absolute;
                 font-size: 16px;
@@ -527,26 +523,7 @@
                 width: 10%;
                 height: 100%;
             }
-            
-            #logo{
-                position: fixed;
-                left: 16%;
-                font-size: 40px;
-                margin-top: 4px;
-                font-family: 'indie flower', cursive;
-                background-image: -webkit-linear-gradient(#3bbced 30%, white, skyblue 90%);
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
-            }
-            #wdd-head{
-                position: fixed;
-                top: 53px;
-                left: 20%;
-                font-size: 10px;
-                color: #3bbced;
-                font-family: 'indie flower', cursive;
-            }
+
             #home-link{
                 position: fixed;
                 top: 5px;
@@ -697,14 +674,14 @@
                 position: absolute;
                 top: 52px;
                 left: 60%;
-                background-color: #3bcdef;
+                background-color: rgba(0, 0, 0, 0.5);
                 font-size: 18px;
             }
             
             .services div{
                 height: 30px;
                 border: 1px solid white;
-                border-radius: 5px;
+                border-radius: 0px;
             }
             .marketing{
                 transform-origin: 0% -0%;
@@ -714,19 +691,16 @@
                 position: absolute;
                 top: 100%;
                 left: 70%;
-                background-color: #3bbced;
+                background-color: rgba(0, 0, 0, 0.5);
                 font-size: 18px;
 
             }
             .marketing div{
                 height: 33%;
                 border: 1px solid white;
-                border-radius: 5px;
+                border-radius: 0px;
             }
-            
-            
-            
-     
+
         #space{
             position: absolute;
             margin-top: 70%;
@@ -737,23 +711,61 @@
 
 @media screen and (min-width: 500px) and (max-width: 1100px)
 {
-            #logo{
-                position: fixed;
-                left: 5%;
-                font-size: 45px;
-                margin-top: 4px;
-                background-image: -webkit-linear-gradient(#3bbced 30%, white, skyblue 90%);
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
-            }
-            #wdd-head{
-                position: fixed;
-                top: 53px;
-                left: 5%;
-                font-size: 8px;
-                color: #fff;
-            }
+#right-lines{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+#right-lines:hover{cursor: pointer;}
+#A{width: 40px; background-color: white; height: 3px; width: 20px; position: absolute; top: 10px; left: 20px;}
+#B{width: 40px; background-color: white; height: 3px; width: 30px; position: absolute; top: 20px; left: 10px}
+#C{width: 40px; background-color: white; height: 3px; width: 40px; position: absolute; top: 30px;}
+#nav-drop-tablet{width: 100%; height: 52px; background-color: white; z-index: 3; position: fixed; top: 0%; color: black;}
+.nav-drop{position: absolute; width: 20%; height: 100%; top: 0%; font-size: 20px; border-radius: 5px;}
+.nav-drop:hover{color: white; background-color: rgba(0, 0, 0, 0.6); cursor: pointer}
+#cross-sign{
+    width: 30px;
+    height: 30px;
+    -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 100%;
+    left: 95%;
+}
+#cross-sign:hover{
+    cursor: pointer;
+    background-color: black;
+    transform: scale(1.3);
+}
+#nav-drop-services{
+    left: 0%;
+}
+#nav-drop-marketing{
+    left: 20%;
+}
+#nav-drop-prices{
+    left: 40%;
+}
+#nav-drop-work{
+    left: 60%;
+}
+#nav-drop-blog{
+    left: 80%;
+}
+    .head-data{
+        visibility: hidden;
+    }
+  
+    #header:before{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        content: '';
+    }     
             #home-link{
                 position: fixed;
                 top: 5px;

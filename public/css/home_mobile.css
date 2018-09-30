@@ -1,6 +1,6 @@
 mark{
-                background-color: #3bbced;
-                color: white;
+                background-color: rgba(255, 255, 255, 0.9);
+                color: black;
                 opacity: .9;
             }
             @keyframes slide-out{
@@ -24,49 +24,44 @@ mark{
             
             @keyframes line1{
                 from{transform: translate(150px, 20px) rotateZ(-45deg)}
-                to{transform: translate(0px, 20px) rotateZ(-90deg); background-color: #3bbced}
+                to{transform: translate(0px, 20px) rotateZ(-90deg); background-color: black}
             }
             @keyframes line2{
                 from{transform: translate(150px, -10px) rotateZ(-45deg)}
-                to{transform: translate(0px, -20px) rotateZ(-90deg); background-color: #3bbced}
+                to{transform: translate(0px, -20px) rotateZ(-90deg); background-color: black}
             }@keyframes line3{
                 from{transform: translate(150px, -40px) }
-                to{transform: translate(0px, -60) rotateZ(-90deg); background-color: #3bbced}
+                to{transform: translate(0px, -60) rotateZ(-90deg); background-color: black}
             }
 
             @keyframes lineback1{
                 from{transform: translate(0px, 20px) rotateZ(-90deg)}
-                to{transform: translate(150px, 20px) rotateZ(45deg); background-color: salmon}
+                to{transform: translate(150px, 20px) rotateZ(45deg); background-color: white}
             }
             @keyframes lineback2{
                 from{transform: translate(0px, -20px) rotateZ(-90deg)}
-                to{transform: translate(150px, -10px) rotateZ(-45deg); background-color: salmon}
+                to{transform: translate(150px, -10px) rotateZ(-45deg); background-color: white}
             }@keyframes lineback3{
                 from{transform: translate(0px, -60px) rotateZ(-90deg)}
-                to{transform: translate(150px, -40px) rotateZ(-45deg); background-color: salmon}
+                to{transform: translate(150px, -40px) rotateZ(-45deg); background-color: white}
             }
         @keyframes changecolor{
-            0%{color: white}
-            10%{color: blue}
-            20%{color: red}
-            30%{color: yellow}
-            40%{color: pink}
-            50%{color: orange}
-            60%{color: purple}
-            70%{color: brown}
-            80%{color: silver}
-            90%{color: gold}
-            100%{color: salmon}
+            0%{color: rgba(255, 0, 0, 0.3);}
+            20%{color: rgba(0, 0, 255, 0.5);}
+            40%{color: rgba(255, 0, 0, 0.7);}
+            60%{color: rgba(0, 0, 255, 0.9);}
+            80%{color: rgba(255, 0, 0, 0.1);}
+            100%{color: rgba(0, 0, 255, 0.3);}
         }
         @keyframes arrow_down
 		{
-			from{-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 60%, 100% 60%, 50% 100%, 0% 60%, 40% 60%); background-color: #3bbced;}
-			to{-webkit-clip-path: polygon(50% 0%, 100% 40%, 60% 40%, 60% 100%, 40% 100%, 40% 40%, 0% 40%); transform: translateY(80px); background-color: salmon;}
+			from{-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 60%, 100% 60%, 50% 100%, 0% 60%, 40% 60%); background-color: white;}
+			to{-webkit-clip-path: polygon(50% 0%, 100% 40%, 60% 40%, 60% 100%, 40% 100%, 40% 40%, 0% 40%); transform: translateY(80px); background-color: black;}
 		}
 		@keyframes arrow_up
 		{
-			from{-webkit-clip-path: polygon(50% 0%, 100% 40%, 60% 40%, 60% 100%, 40% 100%, 40% 40%, 0% 40%); transform: translateY(80px); background-color: salmon;}
-			to{-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 60%, 100% 60%, 50% 100%, 0% 60%, 40% 60%); transform: translateY(0px); background-color: #3bbced}
+			from{-webkit-clip-path: polygon(50% 0%, 100% 40%, 60% 40%, 60% 100%, 40% 100%, 40% 40%, 0% 40%); transform: translateY(80px); background-color: black;}
+			to{-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 60%, 100% 60%, 50% 100%, 0% 60%, 40% 60%); transform: translateY(0px); background-color: white}
 		}
 
 		@keyframes navbar-show{
@@ -104,29 +99,31 @@ body{
 	top: 0px;
 	left: 0px;
 	z-index: 3;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(100, 0, 100, 0.5);
     box-shadow: 10px 0px 10px grey;
     transition: transform .5s;
 }
 
 #logo
 {
-	font-size: 40px;
+	font-size: 35px;
 	position: absolute;
-	left: 5%;
-	color: salmon;
+	left: 10%;
+	color: black;
 	opacity: .7;
+    margin-top: 8px;
+    letter-spacing: 2.5px;
 }
 #wdd-head
 {
-	font-size: 10px;
+    font-size: 10px;
 	position: absolute;
-	top: 45px;
-	left: 18%;
-	color: #3bbced;
+	top: 44px;
+	left: 21%;
+	color: white;
 }
 
-
+#sidebar a{color: white;}
 #sidebar{
     background-color: black;
     box-shadow: 3px 2px 3px black;
@@ -134,7 +131,7 @@ body{
     transform: translateX(-100%);
     z-index: 3;
     opacity: .9;
-    color: #3bbced;
+    color: white;
     border-radius-left-top: 10px;
     z-index: 4;
     position: fixed;
@@ -241,6 +238,7 @@ body{
                 position: absolute;
                 top: 60%;
                 left: 50%;
+                color: #3bbcde;
             }.ins-side{
                 position: absolute;
                 top: 60%;
@@ -258,18 +256,21 @@ body{
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	background-color: rgba(255, 255, 255, .95);
+	background-color: rgba(100, 0, 100, .7);
 	z-index: 4;
-	color: black;
+	color: white;
 	transform: translateY(-100%);
 }
-#nav-drop-mobile a{color: black;}
+#nav-drop-mobile a{color: white;}
 #nav-mobile-logo
 {
     font-size: 40px;
     position: absolute;
-    left: 5%;
-    opacity: .7;
+    left: 0%;
+    padding-left: 8%;
+    width: 100%;
+    opacity: 1;
+    background-color: white;
 }
 #nav-mobile-wdd
 {
@@ -291,17 +292,17 @@ body{
 {
 	transform-origin: 0% -0%;
     transform: scaleY(0);
-    width: 97%;
+    width: 100%;
     position: absolute;
     top: 100%;
-    left: 2%;
-    background-color: #3bcdef;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .7);
     font-size: 18px;
 }
 .services div{
     height: 30px;
     border: 1px solid white;
-    border-radius: 5px;
+    width: 100%;
 }
 #nav-marketing
 {
@@ -316,17 +317,15 @@ body{
     transform: scaleY(0);
     position: absolute;
     top: 100%;
-    left: 2%;
-    width: 97%;
-    background-color: #3bbced;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 18px;
     width: 100%;
 }
 .marketing div{
     height: 30px;
     border: 1px solid white;
-    border-radius: 5px;
-    
 }
 #our-work
 {
@@ -359,6 +358,7 @@ body{
     top: 0px;
     width: 30px;
     height: 30px;
+    transform: scale(0.8);
 
 }
 #three-lines:hover{cursor: pointer}
@@ -366,19 +366,20 @@ body{
     width: 8px;
     height: 30px;
     transform: translate(0px, 20px) rotateZ(-90deg);
-    background-color: #3bbced;
+    background-color: black;
+
 }
 #line-2{
     width: 8px;
     height: 30px;
     transform: translate(0px, -20px) rotateZ(-90deg);
-    background-color: #3bbced;
+    background-color: black;
 }
 #line-3{
     width: 8px;
     height: 30px;
     transform: translate(0px, -60px) rotateZ(-90deg);
-    background-color: #3bbced;
+    background-color: black;
 }
 
 #drop-lines-mobile
@@ -387,7 +388,7 @@ body{
 	height: 25px;
 	z-index: 5;
 	-webkit-clip-path: polygon(40% 0%, 60% 0%, 60% 60%, 100% 60%, 50% 100%, 0% 60%, 40% 60%);
-	background-color: #3bbced;
+	background-color: white;
 	position: fixed;
 	top: 10px;
 	left: 93%;

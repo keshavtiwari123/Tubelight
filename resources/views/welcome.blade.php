@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Chela+one">
-        <title>TUBELIGHT</title>
+        <title>TUBELIGHT | Web Design And Development</title>
         <link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap.min.css')}}">
         @if(!$mobile)
         <link rel="stylesheet" type="text/css" href="{{URL::asset('css/home.css')}}">
@@ -24,23 +24,39 @@
             </div></a>
             <div id="wdd-head">WEB DESIGN AND DEVELOPMENT COMPANY</div>
             @if(!$mobile)
-            <a href="{{route('home')}}"><div id="home-link">HOME</div></a>
-            <div id='nav-services'>SERVICES</div>
+            <div id="whatsapp">
+                Call now or 
+                <img src="{{URL::asset('storage/whatsapp-icon.png')}}">752613187
+            </div>
+            <div id='nav-services' class="head-data">SERVICES</div>
             <div class="services">
                 <a href="{{route('staticWebsite')}}"><div id="static-website-development">Static Website Development</div></a>
                 <a href="{{route('dynamicWebsite')}}"><div id="dynmic-website-development">Dynamic Website Development</div></a>
                 <a href="{{route('mobileWebsite')}}"><div id="mobile-web-development">Mobile Web Development</div></a>
                 <a href="{{route('webAppWebsite')}}"><div id="web-app-development">Web Application Development</div></a>
             </div>
-            <div id=nav-marketing>MARKETING</div>
+            <div id='nav-marketing' class="head-data">MARKETING</div>
             <div class="marketing">
                 <div id="seo-nav">SEO</div>
                 <div id="adsence">Google AdSence</div>
                 <div id="social-media-marketing">Social Media Marketing</div>
             </div>
-            <a href="{{route('ourWork')}}"><div id="our-work">OUR-WORK</div></a>
-            <a href="{{route('prices')}}"><div id="prices">PRICES</div></a>
-            <div id="blog">BLOG</div>
+            <a href="{{route('ourWork')}}"><div id="our-work" class="head-data">OUR-WORK</div></a>
+            <a href="{{route('prices')}}"><div id="prices" class="head-data">PRICES</div></a>
+            <div id="blog" class="head-data">BLOG</div>
+            <div id="right-lines">
+                <div id='A'></div>
+                <div id='B'></div>
+                <div id='C'></div>
+            </div>
+            <div id="nav-drop-tablet">
+                <div id='nav-drop-services' class="nav-drop">SERVICES</div>
+                <div id='nav-drop-marketing' class="nav-drop">MARKETING</div>
+                <div id='nav-drop-work' class="nav-drop">OUR-WORK</div>
+                <div id='nav-drop-prices' class="nav-drop">PRICES</div>
+                <div id='nav-drop-blog' class="nav-drop">BLOG</div>
+                <div id="cross-sign"></div>
+            </div>
             @endif
         </div>
         @if($mobile)
@@ -59,14 +75,14 @@
                     <a href="{{route('mobileWebsite')}}"><div id="mobile-web-development">Mobile Web Development</div></a>
                     <a href="{{route('webAppWebsite')}}"><div id="web-app-development">Web Application Development</div></a>
                 </div>
-                <div id=nav-marketing>MARKETING</div>
+                <div id='nav-marketing' >MARKETING</div>
                 <div class="marketing" >
                     <div id="seo-nav">SEO</div>
                     <div id="adsence">Google AdSence</div>
                     <div id="social-media-marketing">Social Media Marketing</div>
                 </div>
-                <a href="{{route('ourWork')}}"><div id="our-work">OUR-WORK</div></a>
-                <a href="{{route('prices')}}"><div id="prices">PRICES</div></a>
+                <a href="{{route('ourWork')}}"><div id="our-work" >OUR-WORK</div></a>
+                <a href="{{route('prices')}}"><div id="prices" >PRICES</div></a>
                 <div id="blog">BLOG</div>
             </div>
         @endif

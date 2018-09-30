@@ -49,21 +49,21 @@ var arrow = 1;
                 $("#nav-services").click(function(){
                     $('.services').css('animation', 'navbar-show .5s forwards');
                     $('.marketing').css('animation', 'navbar-hide .5s forwards');
-                    $(this).css('color', '#3bbcde');
-                    $("#nav-marketing").css('color', 'black')
+                    $(this).css('color', 'black');
+                    $("#nav-marketing").css('color', 'white')
 
                 });
                 $("#nav-marketing").click(function(){
                     $('.marketing').css('animation', 'navbar-show .5s forwards');
                     $('.services').css('animation', 'navbar-hide .5s forwards');
-                    $(this).css('color', '#3bbcde');
-                    $("#nav-services").css('color', 'black')
+                    $(this).css('color', 'black');
+                    $("#nav-services").css('color', 'white')
                 });
                 $("#footer, #sidebar, #enquiry, #message, #container").click(function(){
                     $('.services').css('animation', 'navbar-hide .5s forwards');
                     $('.marketing').css('animation', 'navbar-hide .5s forwards');
-                    $("#nav-services").css('color', 'black');
-                    $("#nav-marketing").css('color', 'black');
+                    $("#nav-services").css('color', 'white');
+                    $("#nav-marketing").css('color', 'white');
                     if(arrow == 0)
                     {
                         arrow = 1;
@@ -117,3 +117,11 @@ var arrow = 1;
             y = y*z;
             $("#message, #enquiry").css("transform", 'translateX('+ x +'px) translateY(' + y + 'px) rotateZ('+x + 'deg) rotateX('+y+'deg) rotateY('+x+'deg) scale('+w+')');
         }, 900);
+
+$("#nav-drop-tablet").hide();
+$("#right-lines").click(function(){
+    $("#nav-drop-tablet").show(300);
+});
+$("#cross-sign").click(function(){
+    $("#nav-drop-tablet").hide(300);
+});

@@ -1,66 +1,141 @@
-
+#content-1{
+	background-color: rgba(255, 0, 0, 0.5);
+	width: 100%;
+	height: calc(100% - 52px);
+	margin-top: 52px;
+}
 #about_website{
-			color: rgba(0, 0, 255, 0.5);
-			width: 40%;
-			font-size: 20px;
-			position: absolute;
-			top: 15%;
-			margin-left: 50%;
-			padding: 10px;
-			border-radius: 3px;
-			border: 1px solid rgba(0, 0, 255, 0.3);
-			background-color: rgba(0, 0, 255, 0.1);
-		}
-		#wiki{
-			position: absolute;
-			top: 42%;
-			left: 80%;
-			text-align: right;
+			color: black;
+			width: 80%;
+			letter-spacing: 1px;
 			font-size: 25px;
-			color: rgba(0, 0, 255, 0.6);
-		}
-		#website{
-			color: salmon;
-			font-size: 35px;
 			position: absolute;
-			top: 20%;
-			left: 20%;
+			left: 10%;
+			top: 45%;
+			padding: 20px;
+			background-color: rgba(0, 0, 255, 0);
+		}
+		
+		#website{
+			color: rgba(0, 0, 0, 0.6);
+			font-size: 50px;
+			position: absolute;
+			top: 25%;
+			left: 10%;
 		}
 		#image{
-			margin-top: 30%;
-			margin-left: 20%;
-			overflow: hidden;
-			width: 60%;
+			z-index: -1;
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			top: 0px;
+			left: 0%;
 		}
 		#image img{
-			width: 100%;
+			height: 100%;
 		}
-		#image:hover img{
-			animation: zoom 1s forwards;
+		#we-provide-upper-layer{
+			width: 100%;
+			height: 100%;
+			margin-top: 50%;
+			background-color: white;
+		}
+		#we-provide{
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 0, 0, 0.5);
+			z-index: 2;
+			opacity: 1;
+		}
+		#what{
+			font-size: 40px;
+			color: rgba(0, 0, 0, 0.6);
+			position: relative;
+			top: 2%;
+			left: 10%;
+			width: 80%;
 		}
 		#we-deliver{
 			position: absolute;
-			margin-top: 10%;
-			left: 20%;
-			color: grey;
-			width: 60%;
+			margin-top: 1%;
+			left: 10%;
+			color: white;
+			width: 80%;
 			padding: 2%;
 			font-size: 25px;
-			height: 500px;
-			box-shadow: 5px 5px 8px grey;
-			border-radius: 10px;
-			background-color: rgba(255, 0, 0, .2);
-			border: 1px solid rgba(255, 0, 0, .3);
 		}
 		#price{
-		position: absolute;
-			margin-top: 6%;
-			left: 20%;
-			color: black;
-			font-size: 30px;	
+		position: relative;
+			top: 80%;
+			left: 10%;
+			color: rgba(0, 0, 0, 0.7);
+			font-size: 40px;
+			width: 80%;	
 		}
 		#space{
 			position: absolute;
 			margin-top: 70%;
 			height: 10px;
 		}
+
+
+@media screen and (min-width: 700px) and (max-width: 800px)
+{
+	#we-provide-upper-layer{
+			margin-top: 100%;
+		}
+	#what{
+		font-size: 35px;
+		text-align: center;
+	}
+	#we-deliver{
+		font-size: 20px;
+	}
+	
+	#website{
+		font-size: 45px;
+	}
+	#about_website{
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px)
+{
+	#we-provide-upper-layer{
+			margin-top: 110%;
+		}
+	#what{
+		text-align: center;
+		font-size: 30px;
+	}
+	#we-deliver{
+		font-size: 18px;
+	}
+	#website{
+		font-size: 40px;
+	}
+	#about_website{
+		font-size: 19px;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px)
+{
+	#we-provide-upper-layer{
+			margin-top: 90%;
+		}
+	#what{
+		text-align: center;
+		font-size: 30px;
+	}
+	#we-deliver{
+			font-size: 17px;
+	}
+	#website{
+		font-size: 35px;
+	}
+	#about_website{
+		font-size: 18px;
+	}
+}
